@@ -2,4 +2,10 @@
 *.xpi
 *.crx
 *.pem
+chrome/manifest.json
+chrome/content.js
+firefox/data/content.js
+firefox/package.json
+userscript/youtube_no_lightsaber.user.js
+userscript/head.js
 *\#

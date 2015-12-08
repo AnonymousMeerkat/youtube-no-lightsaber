@@ -11,6 +11,7 @@ clean:
 	rm -f firefox/package.json
 	rm -f firefox/*.xpi
 	rm -f userscript/youtube_no_lightsaber.user.js
+	rm -f userscript/head.js
 
 %: %.in
 	sed -e "s:@@NAME@@:$(NAME):g" \
