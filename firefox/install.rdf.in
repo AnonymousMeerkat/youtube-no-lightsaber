@@ -5,9 +5,9 @@
           <em:type>2</em:type>
           <em:bootstrap>true</em:bootstrap>
           <em:unpack>false</em:unpack>
-          <em:version>1.0.1</em:version>
-          <em:name>Youtube disable lightsaber sound</em:name>
-          <em:description>Removes the annoying youtube lightsaber sound</em:description>
+          <em:version>@@VERSION@@</em:version>
+          <em:name>@@NAME@@</em:name>
+          <em:description>@@DESC@@</em:description>
           <em:creator>Anonymous Meerkat</em:creator>
 
           <em:targetApplication>

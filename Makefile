@@ -26,7 +26,7 @@ firefox/data/content.js: youtube_no_lightsaber.js
 userscript/youtube_no_lightsaber.user.js: userscript/head.js youtube_no_lightsaber.js
 	cat $< > $@
 
-firefox/@youtubelightsaber-$(VERSION).xpi: firefox/package.json firefox/data/content.js
+firefox/@youtubelightsaber-$(VERSION).xpi: firefox/package.json firefox/install.rdf firefox/data/content.js
 	cd firefox && jpm xpi
 	cd ..
 
