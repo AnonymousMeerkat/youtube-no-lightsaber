@@ -33,6 +33,7 @@ firefox/@youtubelightsaber-$(VERSION).xpi: firefox/package.json firefox/data/con
 	rm -f firefox/bootstrap.js
 	rm -f firefox/@youtubelightsaber-$(VERSION).xpi
 	cd firefox && jpm xpi
+	zip -d firefox/@youtubelightsaber-$(VERSION).xpi package.json.in
 
 
 chrome: chrome/manifest.json chrome/content.js
