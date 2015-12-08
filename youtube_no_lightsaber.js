@@ -1,5 +1,4 @@
-if (window.location.href.match("watch") !== null ||
-    window.location.href.match("embed") !== null)
+if (window.location.href.match(".youtube.com") !== null)
 {
     light_main();
 }

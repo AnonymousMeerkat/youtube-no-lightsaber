@@ -1,6 +1,6 @@
 NAME = Youtube disable lightsaber sound
 DESCRIPTION = Removes the annoying youtube lightsaber sound
-VERSION = 1.0.1
+VERSION = 1.0.2
 
 all: chrome firefox userscript/youtube_no_lightsaber.user.js
 
@@ -13,7 +13,7 @@ clean:
 	rm -f userscript/youtube_no_lightsaber.user.js
 	rm -f userscript/head.js
 
-%: %.in
+%: %.in Makefile
 	sed -e "s:@@NAME@@:$(NAME):g" \
 	    -e "s:@@DESC@@:$(DESCRIPTION):g" \
 	    -e "s:@@VERSION@@:$(VERSION):g" $< > $@
@@ -31,6 +31,7 @@ firefox/@youtubelightsaber-$(VERSION).xpi: firefox/package.json firefox/data/con
 	find firefox | grep '\~$$' | xargs rm -f
 	rm -f firefox/install.rdf
 	rm -f firefox/bootstrap.js
+	rm -f firefox/@youtubelightsaber-$(VERSION).xpi
 	cd firefox && jpm xpi
 
 
