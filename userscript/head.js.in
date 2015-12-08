@@ -1,0 +1,11 @@
+// ==UserScript==
+// @name         @@NAME@@
+// @namespace    https://github.com/AnonymousMeerkat/youtube-no-lightsaber
+// @version      @@VERSION@@
+// @description  @@DESC@@
+// @author       Anonymous Meerkat
+// @include      https://www.youtube.com/*
+// @grant        none
+// @run-at       document-end
+// ==/UserScript==
+/* jshint -W097 */

@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+
+    "name": "Youtube disable lightsaber sound",
+    "description": "Removes the annoying youtube lightsaber sound",
+    "version": "1.0.1",
+
+    "permissions": [
+        "https://www.youtube.com/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["content.js"],
+            "all_frames": true
+        }
+    ]
+}

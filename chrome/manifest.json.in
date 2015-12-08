@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+
+    "name": "@@NAME@@",
+    "description": "@@DESC@@",
+    "version": "@@VERSION@@",
+
+    "permissions": [
+        "https://www.youtube.com/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["content.js"],
+            "all_frames": true
+        }
+    ]
+}

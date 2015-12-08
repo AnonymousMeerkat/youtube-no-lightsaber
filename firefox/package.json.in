@@ -1,0 +1,16 @@
+{
+  "title": "@@NAME@@",
+  "name": "youtubelightsaber",
+  "version": "@@VERSION@@",
+  "description": "@@DESC@@",
+  "main": "index.js",
+  "author": "Anonymous Meerkat",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

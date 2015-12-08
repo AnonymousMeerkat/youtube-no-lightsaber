@@ -1,0 +1,16 @@
+{
+  "title": "Youtube disable lightsaber sound",
+  "name": "youtubelightsaber",
+  "version": "1.0.1",
+  "description": "Removes the annoying youtube lightsaber sound",
+  "main": "index.js",
+  "author": "Anonymous Meerkat",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
