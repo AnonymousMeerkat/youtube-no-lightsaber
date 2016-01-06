@@ -1,6 +1,6 @@
 NAME = Youtube disable lightsaber sound
 DESCRIPTION = Removes the annoying youtube lightsaber sound
-VERSION = 1.0.2
+VERSION = 1.0.3
 
 all: chrome firefox userscript
 
@@ -22,6 +22,7 @@ chrome/content.js: youtube_no_lightsaber.js
 	cp $< $@
 
 firefox/data/content.js: youtube_no_lightsaber.js
+	[ -d firefox/data ] && rm -rf firefox/data;:
 	mkdir firefox/data
 	cp $< $@
 
