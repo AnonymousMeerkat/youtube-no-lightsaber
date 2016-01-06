@@ -13,7 +13,7 @@ function light_main() {
     var vchildren;
     var removeinter;
     function light_load_els() {
-        volume = document.getElementsByClassName("ytp-volume-control")[0];
+        volume = document.getElementsByClassName("ytp-volume-panel")[0];
         if (!volume)
             return;
         window.clearInterval(loadinter);
@@ -25,9 +25,9 @@ function light_main() {
     }
 
     function light_remove_els() {
-        if (vchildren.length < 3)
+        if (vchildren.length < 2)
             return;
-        for (var i = 2; i < vchildren.length; i++)
+        for (var i = 1; i < vchildren.length; i++)
         {
             vchildren[i].pause();
             vchildren[i].src = "";
